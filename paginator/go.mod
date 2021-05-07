@@ -1,4 +1,4 @@
-module github.com/dogukanayd/gorm-pagination/paginate
+module github.com/dogukanayd/gorm-pagination/paginator
 
 go 1.15
 
