@@ -12,7 +12,7 @@ go get github.com/dogukanayd/gorm-pagination
 Just create the Config struct from the package and use Paginate method
 
 ```go
-	p, nor := (&paginator.Config{
+	p, nor := (&pagination.Config{
 		Page:    1,
 		PerPage: 2,
 		Path:    c.Path(),
