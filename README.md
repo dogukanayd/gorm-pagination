@@ -6,7 +6,7 @@
 
 ---
 ```shell
-go get github.com/dogukanayd/gorm-pagination
+go get github.com/dogukanayd/gorm-pagination/pagination
 ```
 
 Just create the Config struct from the package and use Paginate method
