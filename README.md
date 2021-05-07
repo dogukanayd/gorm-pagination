@@ -32,11 +32,11 @@ Example Response:
     },
     {
       "id": 2,
-      "campaign_name": "Jane"
+      "user_name": "Jane"
     },
     {
       "id": 1,
-      "campaign_name": "Luke"
+      "user_name": "Luke"
     }
   ],
   "first_page_url": "127.0.0.1:3030/users/get?page=1&per_page=3",
