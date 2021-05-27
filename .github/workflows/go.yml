@@ -20,7 +20,7 @@ jobs:
                   cd pagination
                   go mod vendor
                   go test -v -coverpkg=./ -coverprofile=../coverage.out ./... -count=1
-            -name:
+            -name: test
                 - run: |
                       pwd
                       cat coverage.out
