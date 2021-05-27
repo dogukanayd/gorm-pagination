@@ -24,10 +24,10 @@ jobs:
             -   name: Convert coverage to lcov
                 uses: jandelgado/gcov2lcov-action@v1.0.0
                 with:
-                    infile: ./pagination/coverage.out
-                    outfile: ./pagination/coverage.lcov
+                    infile: /pagination/coverage.out
+                    outfile: /pagination/coverage.lcov
             -   name: Coveralls
                 uses: coverallsapp/github-action@master
                 with:
                     github-token: ${{ secrets.github_token }}
-                    path-to-lcov: ./pagination/coverage.lcov
+                    path-to-lcov: /pagination/coverage.lcov
