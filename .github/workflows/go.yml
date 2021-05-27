@@ -20,15 +20,15 @@ jobs:
                     export PATH=$PATH:$(go env GOPATH)/bin
                     cd pagination
                     go mod vendor
-                    go test -v -coverpkg=./ -coverprofile=coverage.out ./... -count=1
+                    go test -v -coverpkg=./ -coverprofile=../coverage.out ./... -count=1
                     pwd
             -   name: Convert coverage to lcov
                 uses: jandelgado/gcov2lcov-action@v1.0.0
                 with:
-                    infile: /pagination/coverage.out
-                    outfile: /pagination/coverage.lcov
+                    infile: coverage.out
+                    outfile: coverage.lcov
             -   name: Coveralls
                 uses: coverallsapp/github-action@master
                 with:
                     github-token: ${{ secrets.github_token }}
-                    path-to-lcov: /pagination/coverage.lcov
+                    path-to-lcov: coverage.lcov
